@@ -1,1 +1,44 @@
-{\n  \"name\": \"Kantor Kecamatan Sigaluh\",\n  \"short_name\": \"Sigaluh\",\n  \"description\": \"Portal resmi Kantor Kecamatan Sigaluh - Melayani masyarakat dengan sepenuh hati\",\n  \"start_url\": \"./index.html\",\n  \"scope\": \"./\",\n  \"display\": \"standalone\",\n  \"orientation\": \"portrait-primary\",\n  \"theme_color\": \"#1e3a8a\",\n  \"background_color\": \"#ffffff\",\n  \"icons\": [\n    {\n      \"src\": \"data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'><rect fill='%231e3a8a' width='192' height='192'/><text x='96' y='120' font-size='100' fill='white' text-anchor='middle' font-weight='bold'>S</text></svg>\",\n      \"sizes\": \"192x192\",\n      \"type\": \"image/svg+xml\"\n    },\n    {\n      \"src\": \"data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><rect fill='%231e3a8a' width='512' height='512'/><text x='256' y='320' font-size='300' fill='white' text-anchor='middle' font-weight='bold'>S</text></svg>\",\n      \"sizes\": \"512x512\",\n      \"type\": \"image/svg+xml\"\n    }\n  ]\n}
+{
+  "name": "Kantor Kecamatan Sigaluh",
+  "short_name": "Sigaluh",
+  "description": "Portal resmi Kantor Kecamatan Sigaluh — informasi & layanan publik. Installable PWA siap jadi APK via PWABuilder.",
+  "id": "/",
+  "start_url": "/?homescreen=1",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#1e3a8a",
+  "background_color": "#ffffff",
+  "categories": ["government", "productivity"],
+  "prefer_related_applications": false,
+  "shortcuts": [
+    {
+      "name": "Layanan",
+      "short_name": "Layanan",
+      "description": "Buka daftar layanan publik",
+      "url": "/?homescreen=1#layanan",
+      "icons": [{ "src": "icons/icon-192x192.png", "sizes": "192x192", "type": "image/png" }]
+    },
+    {
+      "name": "Kontak",
+      "short_name": "Kontak",
+      "description": "Hubungi Kantor Kecamatan",
+      "url": "/?homescreen=1#kontak",
+      "icons": [{ "src": "icons/icon-192x192.png", "sizes": "192x192", "type": "image/png" }]
+    }
+  ],
+  "icons": [
+    { "src": "icons/icon-72x72.png",  "sizes": "72x72",   "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-96x96.png",  "sizes": "96x96",   "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-128x128.png", "sizes": "128x128", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-144x144.png", "sizes": "144x144", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-152x152.png", "sizes": "152x152", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-192x192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "icons/icon-384x384.png", "sizes": "384x384", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512x512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ],
+  "screenshots": [
+    { "src": "icons/screen-1.png", "sizes": "640x360", "type": "image/png" },
+    { "src": "icons/screen-2.png", "sizes": "640x360", "type": "image/png" }
+  ]
+}
