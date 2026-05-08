@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portal resmi Kantor Kecamatan Sigaluh - Melayani masyarakat dengan sepenuh hati">
+    <meta name="theme-color" content="#1e3a8a">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Kecamatan Sigaluh">
+    <title>Kantor Kecamatan Sigaluh</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h1>🏛️ Kecamatan Sigaluh</h1>
+            </div>
+            <button class="menu-toggle" id="menuToggle">☰</button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#beranda" onclick="navigateTo('beranda')">Beranda</a></li>
+                <li><a href="#profil" onclick="navigateTo('profil')">Profil</a></li>
+                <li><a href="#layanan" onclick="navigateTo('layanan')">Layanan</a></li>
+                <li><a href="#kontak" onclick="navigateTo('kontak')">Kontak</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section id="beranda" class="section active">
+            <div class="hero">
+                <h2>Selamat Datang di Kantor Kecamatan Sigaluh</h2>
+                <p>Melayani masyarakat dengan sepenuh hati dan profesionalisme</p>
+                <button class="btn" onclick="navigateTo('layanan')">Jelajahi Layanan</button>
+            </div>
+            <div class="info-cards">
+                <div class="card">
+                    <h3>📍 Lokasi</h3>
+                    <p>Sigaluh, Jawa Tengah, Indonesia</p>
+                </div>
+                <div class="card">
+                    <h3>👥 Populasi</h3>
+                    <p>Melayani ribuan keluarga</p>
+                </div>
+                <div class="card">
+                    <h3>⏰ Jam Kerja</h3>
+                    <p>Senin - Jumat: 07:30 - 16:30</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="profil" class="section">
+            <h2>Profil Kecamatan Sigaluh</h2>
+            <div class="profile-content">
+                <div class="profile-text">
+                    <h3>Tentang Kami</h3>
+                    <p>Kecamatan Sigaluh adalah bagian integral dari pemerintahan daerah yang berkomitmen untuk memberikan pelayanan terbaik kepada masyarakat. Dengan didukung oleh aparatur yang profesional dan responsif, kami berusaha mewujudkan kesejahteraan dan kemajuan bersama.</p>
+                    <h3>Visi & Misi</h3>
+                    <p><strong>Visi:</strong> Mewujudkan Kecamatan Sigaluh yang maju, sejahtera, dan berkelanjutan.</p>
+                    <p><strong>Misi:</strong></p>
+                    <ul>
+                        <li>Meningkatkan kualitas pelayanan publik</li>
+                        <li>Mendukung pembangunan desa yang berkelanjutan</li>
+                        <li>Memberdayakan masyarakat</li>
+                        <li>Menjaga keamanan dan ketertiban</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="layanan" class="section">
+            <h2>Layanan Publik</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>📄 Surat Keterangan</h3>
+                    <p>Surat keterangan berbagai jenis untuk kebutuhan administrasi masyarakat</p>
+                    <button class="btn-small" onclick="showServiceDetail('Surat Keterangan')">Detail</button>
+                </div>
+                <div class="service-card">
+                    <h3>👨‍👩‍👧‍👦 Data Keluarga</h3>
+                    <p>Administrasi data keluarga dan kependudukan</p>
+                    <button class="btn-small" onclick="showServiceDetail('Data Keluarga')">Detail</button>
+                </div>
+                <div class="service-card">
+                    <h3>🏠 Surat Tanah</h3>
+                    <p>Penerbitan surat tanah dan verifikasi kepemilikan</p>
+                    <button class="btn-small" onclick="showServiceDetail('Surat Tanah')">Detail</button>
+                </div>
+                <div class="service-card">
+                    <h3>📋 Izin Usaha</h3>
+                    <p>Perizinan usaha tingkat kecamatan</p>
+                    <button class="btn-small" onclick="showServiceDetail('Izin Usaha')">Detail</button>
+                </div>
+                <div class="service-card">
+                    <h3>👶 Pencatatan Sipil</h3>
+                    <p>Layanan pencatatan peristiwa penting</p>
+                    <button class="btn-small" onclick="showServiceDetail('Pencatatan Sipil')">Detail</button>
+                </div>
+                <div class="service-card">
+                    <h3>🤝 Mediasi Sengketa</h3>
+                    <p>Bantuan mediasi untuk penyelesaian sengketa</p>
+                    <button class="btn-small" onclick="showServiceDetail('Mediasi Sengketa')">Detail</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="kontak" class="section">
+            <h2>Hubungi Kami</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Informasi Kontak</h3>
+                    <div class="contact-item">
+                        <h4>📍 Alamat</h4>
+                        <p>Jalan Raya Sigaluh No. 1<br>Kecamatan Sigaluh<br>Jawa Tengah, Indonesia</p>
+                    </div>
+                    <div class="contact-item">
+                        <h4>📱 Telepon</h4>
+                        <p><a href="tel:+62274" class="link">+62 (274) XXXXXX</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <h4>✉️ Email</h4>
+                        <p><a href="mailto:info@sigaluh.go.id" class="link">info@sigaluh.go.id</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <h4>⏰ Jam Kerja</h4>
+                        <p>Senin - Jumat: 07:30 - 16:30<br>Sabtu & Minggu: Libur</p>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Kirim Pesan</h3>
+                    <form id="contactForm">
+                        <input type="text" placeholder="Nama Anda" required>
+                        <input type="email" placeholder="Email Anda" required>
+                        <input type="text" placeholder="Subjek" required>
+                        <textarea placeholder="Pesan Anda" rows="5" required></textarea>
+                        <button type="submit" class="btn">Kirim Pesan</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="serviceModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">×</span>
+            <h2 id="serviceTitle"></h2>
+            <p id="serviceDescription"></p>
+            <div id="serviceRequirements"></div>
+            <button class="btn" onclick="closeModal()">Tutup</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Kantor Kecamatan Sigaluh. Semua Hak Dilindungi.</p>
+        <p>Dibuat dengan ❤️ untuk melayani masyarakat</p>
+    </footer>
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('service-worker.js')
+                .then(reg => console.log('Service Worker terdaftar'))
+                .catch(err => console.log('Registrasi Service Worker gagal:', err));
+        }
+    </script>
+    <script src="app.js"></script>
+</body>
+</html>
